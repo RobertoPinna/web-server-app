@@ -34,8 +34,8 @@ weatherForm.addEventListener('submit', (e) => { // it could not work, check well
 
     const location = search.value
     //console.log('testing!' , location)
-
-    const address = 'http://localhost:3000/weather?address='+location
+    // here the same for links for heroku , see above, we can just remove localhost.... from address
+    const address = '/weather?address='+location
     messageTwo.textContent = ''
     fetch(address).then((response) =>{
         response.json().then((data) =>{
