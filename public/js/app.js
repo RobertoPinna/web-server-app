@@ -8,7 +8,8 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
     })
 })
 
-fetch('http://localhost:3000/weather?address=boston').then((response) => {
+//fetch('http://localhost:3000/weather?address=boston').then((response) => { on heroku i can just put the link below , remember other changes ( app.js and package.json)
+fetch('/weather?address=boston').then((response) => {
     response.json().then((data) => {
         if(data.error)
             return console.log(data.error)

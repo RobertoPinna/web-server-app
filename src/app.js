@@ -20,6 +20,9 @@ const forecast = require('./utils/forecast')
 //const forecast = require('./utils/forecast')
 
 const app = express () 
+// set port alone, automatically.. remember to change the script line in package.json and put the command line for launch the app.js
+// remember changes also in app.js client side
+const port = process.env.PORT || 3000
 
 app.use(express.static(path.join(__dirname, '../public/') ) ) // setup the static directory , than u have to put the htmls file inside this dir ( public) and so we can load them files as pages
 
@@ -150,8 +153,8 @@ app.get('*' , (req,res) => { // this works bc * mean match everithing.. and so i
 })
 
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port '+ port)
 })
 
 
