@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel = "stylesheet" href="/css/style.css" >
+    
+
+</head>
+
+<body>
+     <div class="main-content">
+
+         {{>header}} <!-- this brings the content of header.hbs here -->
+         <h2>{{title}} {{name }}</h2>
+         <p>Created by not {{name}}</p>
+
+        <br>
+        <p>ciao</p>
+
+        <form>
+
+            <input placeholder="Location">
+            <button>
+            Search 
+            </button>
+
+        </form>
+
+        <p id = "message-1">ciaone</p>
+        <p id = 'message-2'></p>
+
+
+     </div>
+    
+    {{>footer}}
+    <p>ciao1</p>
+
+    <script src = "/js/app.js" ></script> <!-- this is the right place so we can load all elements of the DOM -->
+</body>
+
+
+</html>
+

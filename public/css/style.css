@@ -1,0 +1,81 @@
+
+/*
+h1{
+    color:grey;
+}
+
+
+img{
+    width: 250px;
+}*/
+
+
+body{
+    color: #333333 ; 
+    font-family : arial;
+    max-width : 650px;
+    margin: 0 auto ; /*0 is for bottom and top and auto distribute space on the left and right*/
+    padding : 0 16px; /* the same of margin : 0 is space between above and bottom , 16px between margin left and right when u reduce window and there is no space*/
+    display : flex;
+    flex-direction : column; /* or row, horizontal vs vertical*/
+    min-height: 100vh;
+
+
+}
+
+.main-content{
+    flex-grow : 10 ; 
+}
+
+footer{
+    background: blue;
+    margin: 16px;
+    padding: 16px ; /* one value : fill the 4 value*/
+    color: #888888;
+    border-top : 1px solid #eeeeee ;
+
+}
+
+header{
+
+    margin-top : 16px ; 
+    margin-bottom : 47px;
+
+}
+
+h1{
+
+    font-size : 64px;
+    margin-bottom : 16px;
+
+}
+
+header a{
+/*it is for links a .. */
+    color : #888888;
+    margin-right : 16px ; 
+    text-decoration: none; 
+
+}
+
+.portrait { 
+    width : 250px ;  
+}
+
+input{
+    border : 1px solid #cccccc;
+    padding : 8px ; 
+}
+
+
+button{
+    cursor: pointer ; 
+    border : 1px solid #888888 ; 
+    background : #888888 ; 
+    color : white ; 
+    padding : 8px ; 
+}
+
+
+
+
