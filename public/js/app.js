@@ -8,6 +8,9 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
     })
 })
 
+//heroku command : 
+//git remote
+// it should show origin and heroku if everything goes well
 //fetch('http://localhost:3000/weather?address=boston').then((response) => { on heroku i can just put the link below , remember other changes ( app.js and package.json)
 // heroku in package.json is looking for the start value in scripts and there u have to put the name of the app u want to launch, u can put others value, remember example : dev : nodemon
 // after the changes u can launch the program with : npm run dev 
